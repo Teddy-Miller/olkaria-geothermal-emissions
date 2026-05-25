@@ -1,0 +1,47 @@
+#==============================================================================
+# HEMCO Configuration for Olkaria Geothermal Field Emissions
+# Study period : 2023-01-01 to 2023-12-31
+# Location     : Olkaria, Kenya Rift Valley
+#                lat=-0.93321, lon=36.331589
+# Gases        : CO2, CH4, H2S
+# Source       : Ground flux measurements (this study)
+#==============================================================================
+
+###############################################################################
+### BEGIN SECTION SETTINGS
+###############################################################################
+ROOT                    : ./data/HEMCO
+Logfile                 : HEMCO.log
+DiagnPrefix             : HEMCO_diagnostics
+DiagnFreq               : Monthly
+Wildcard                : *
+Separator               : /
+Unit tolerance          : 1
+Negative values         : 0
+Only unitless scale fac : false
+Verbose                 : 0
+Warnings                : 1
+
+###############################################################################
+### BEGIN SECTION BASE EMISSIONS
+###############################################################################
+
+# --- CO2 ---
+# Flux : 3.7146e-07 kg/m2/s
+# Rate : 803.3 t/day
+0 OLKARIA_CO2  ./data/HEMCO/olkaria_co2_flux.nc  CO2_flux  2023/1-12/1/0 C xy kg/m2/s CO2
+
+# --- CH4 ---
+# Flux : 5.4246e-10 kg/m2/s
+# Rate : 1.1445 t/day
+0 OLKARIA_CH4  ./data/HEMCO/olkaria_ch4_flux.nc  CH4_flux  2023/1-12/1/0 C xy kg/m2/s CH4
+
+# --- H2S ---
+# Flux : 4.1722e-08 kg/m2/s
+# Rate : 90.1189 t/day
+# Note : H2S oxidises to SO2 in atmosphere
+0 OLKARIA_H2S  ./data/HEMCO/olkaria_h2s_flux.nc  H2S_flux  2023/1-12/1/0 C xy kg/m2/s H2S
+
+###############################################################################
+### END SECTION BASE EMISSIONS
+###############################################################################
