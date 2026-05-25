@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+data/OCO2/ 
+data/TROPOMI/ 
+data/TROPOMI_SO2/ 
+data/GEOS_FP/ 
+*.nc4 
+__pycache__/ 
+.ipynb_checkpoints/ 
