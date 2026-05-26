@@ -223,3 +223,4 @@ data/GEOS_FP/
 *.nc4 
 __pycache__/ 
 .ipynb_checkpoints/ 
+data\ acquisition\ and\ pipeline.ipynb 
