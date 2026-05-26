@@ -1,0 +1,4 @@
+Gas,Comparison,R2,RMSE,Bias,NMB_percent,n_months,Model_mean,Satellite_mean
+CO₂,GEOS-Chem vs OCO-2,0.3532,176.98 ppm,-176.91 ppm,-42.22,9,242.07 ppm,418.98 ppm
+CH₄,GEOS-Chem vs TROPOMI,0.3051,1369.33 ppb,+1368.84 ppb,72.15,11,3266.15 ppb,1897.30 ppb
+H₂S/SO₂,Ground vs TROPOMI SO₂,0.1825,0.2494 DU,~0 DU,,12,5.87×10⁻⁸ kg/m²/s,5.20 DU
